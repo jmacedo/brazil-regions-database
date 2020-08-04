@@ -67,7 +67,7 @@ class PopulateRegionsTablesCommand extends Command
     {
         $this->task('Importing states', function() {
             try {
-                DB::unprepared(file_get_contents('database/sql/Estados.sql'));
+                DB::unprepared(file_get_contents('database/sql/Estados-Cidades-IBGE/Estados.sql'));
             } catch (\Exception $e) {
                 $this->error($e->getMessage());
                 return false;
@@ -78,7 +78,7 @@ class PopulateRegionsTablesCommand extends Command
 
         $this->task('Importing cities', function() {
             try {
-                DB::unprepared(file_get_contents('database/sql/Municipios.sql'));
+                DB::unprepared(file_get_contents('database/sql/Estados-Cidades-IBGE/Municipios.sql'));
             } catch (\Exception $e) {
                 $this->error($e->getMessage());
                 return false;
@@ -89,7 +89,7 @@ class PopulateRegionsTablesCommand extends Command
 
         $this->task('Importing districts', function() {
             try {
-                DB::unprepared(file_get_contents('database/sql/Bairros.sql'));
+                DB::unprepared(file_get_contents('database/sql/Estados-Cidades-IBGE/Bairros.sql'));
             } catch (\Exception $e) {
                 $this->error($e->getMessage());
                 return false;

@@ -1,0 +1,4 @@
+[submodule "database/sql/Estados-Cidades-IBGE"]
+	path = database/sql/Estados-Cidades-IBGE
+	url = https://github.com/chandez/Estados-Cidades-IBGE.git
+	branch = master
