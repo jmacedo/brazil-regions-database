@@ -57,6 +57,8 @@ class State extends Model
 
 https://github.com/chandez/Estados-Cidades-IBGE
 
+The submodule configured for this repository are located in ```database/sql/Estados-Cidades-IBGE```.
+
 Note that not all districts are listed. You should use the districts in this database in an autocomplete field to improve your user experience and save the new districts to complete the list over the time.
 
 #### Alternative source data, without districts (have to adapt the source code of this project)
